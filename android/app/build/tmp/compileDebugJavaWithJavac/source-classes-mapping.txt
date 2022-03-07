@@ -1,0 +1,14 @@
+com/xnmateo/Epicture/MainActivity.java
+ com.xnmateo.Epicture.MainActivity
+com/xnmateo/Epicture/BuildConfig.java
+ com.xnmateo.Epicture.BuildConfig
+com/xnmateo/Epicture/ReactNativeFlipper.java
+ com.xnmateo.Epicture.ReactNativeFlipper
+ com.xnmateo.Epicture.ReactNativeFlipper$1
+ com.xnmateo.Epicture.ReactNativeFlipper$2
+ com.xnmateo.Epicture.ReactNativeFlipper$2$1
+com/xnmateo/Epicture/MainApplication.java
+ com.xnmateo.Epicture.MainApplication
+ com.xnmateo.Epicture.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
