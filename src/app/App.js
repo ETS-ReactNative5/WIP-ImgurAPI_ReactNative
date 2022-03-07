@@ -52,7 +52,7 @@ export default class App extends Component {
 					<Stack.Screen
 						name="Home"
 						component={HomeScreen}
-						optionts={{ title: "Home" }} />
+						options={{ title: "Home" }} />
 					<Stack.Screen
 						name="Search"
 						component={SearchScreen}
