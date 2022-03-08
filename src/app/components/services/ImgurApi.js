@@ -12,6 +12,7 @@ export const getSubmissions = async (page = "0", sort = "newest") => {
             page + "/" + sort, {
             method: 'GET',
             headers: {
+                Accept: "application/json",
                 Authorization: `Client-ID ${API_CLIENT_ID}`,
             },
             mode: '',
@@ -43,6 +44,7 @@ export const getGallery = async (
     albumPreview = "true") => {
     var _header = new Headers();
     _header.append("Authorization", `Client-ID ${API_CLIENT_ID}`)
+    _header.append("Accept", "application/json")
 
     try {
         let response = await fetch(`${API_URL}3/gallery/${section}/${sort}/${window}/${page}?showViral=${showViral}&showMature=${showMature}&album_preview=${albumPreview}`, {

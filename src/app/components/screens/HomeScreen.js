@@ -4,6 +4,8 @@ import { TextInput, TouchableHighlight } from "react-native-gesture-handler";
 import Styles from "../styles/Styles";
 import ImageView from "../views/ImageView";
 import { getGallery, getGallerySearchResult, getSubmissions } from "../services/ImgurApi";
+import * as SecureStore from "expo-secure-store";
+
 
 export default class HomeScreen extends Component {
 
@@ -14,11 +16,15 @@ export default class HomeScreen extends Component {
 			search: " ",
 			sort: "viral",
 			name: "",
+			user: "",
 		};
 	}
 
 	async componentDidMount() {
 		this.getGalleryItems();
+		SecureStore.getItemAsync("user_name").then((usr) => {
+			this.state.user = usr;
+		});
 	}
 
 	getGalleryItems = () => {
@@ -52,7 +58,7 @@ export default class HomeScreen extends Component {
 	render() {
 		return (
 			<SafeAreaView style={Styles.container}>
-				{/* <Text>{this.state.name}</Text> */}
+				{/* <Text>{"Connected as: " + this.state.user}</Text> */}
 				<FlatList
 					data={this.state.gallery}
 					keyExtractor={item => item.id.toString()}

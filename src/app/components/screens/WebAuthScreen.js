@@ -40,7 +40,6 @@ export default class WebAuthScreen extends Component {
 				params.access_token !== undefined &&
 				params.account_username !== undefined
 			) {
-				console.log(params.account_username);
 				this.setState({ authentificated: true });
 				await SecureStore.setItemAsync("bearer_token", params.access_token);
 				await SecureStore.setItemAsync("user_name", params.account_username);
@@ -65,7 +64,7 @@ export default class WebAuthScreen extends Component {
 							API_URL +
 							"oauth2/authorize?client_id=" +
 							API_CLIENT_ID +
-							"&response_type=token",
+							"&response_type=token"
 					}}
 					onNavigationStateChange={this.onNavigationStateChange.bind(this)}
 					javaScriptEnabled={true}
