@@ -6,7 +6,7 @@ Application interacting with the Imgur API in React-Native, running on Android a
 First project in React-Native, it was realised within 48h hours and was tested on Pixel 2 Android API 29 using an emulator and Iphone 8 Ios 14.5.1 using Expo Go.
 
 Some key points are: 
-- Use Class/Functionial programming
+- Use Class/Functional programming
 - Use DeepLinking (imgur webauth)
 - Use secure store
 - Use asynchronous functions
