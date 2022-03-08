@@ -11,6 +11,7 @@ Some key points are:
 - Use secure store
 - Use asynchronous functions
 - Multiplatform support
+- Get/Post request to imgur API
 
 
 ![1](https://user-images.githubusercontent.com/9270970/157233843-d93763a6-9b72-4028-a269-fff71506910c.png)
