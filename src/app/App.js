@@ -1,7 +1,6 @@
 import "react-native-gesture-handler";
 import React, { Component } from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ConnectScreen from "./components/screens/ConnectScreen";
 import WebAuthScreen from "./components/screens/WebAuthScreen";

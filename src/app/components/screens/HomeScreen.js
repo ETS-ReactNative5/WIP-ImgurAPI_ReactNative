@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Text, SafeAreaView, FlatList } from "react-native";
-import { TextInput, TouchableHighlight } from "react-native-gesture-handler";
+import {SafeAreaView, FlatList } from "react-native";
 import Styles from "../styles/Styles";
 import ImageView from "../views/ImageView";
-import { getGallery, getGallerySearchResult, getSubmissions } from "../services/ImgurApi";
+import { getGallery } from "../services/ImgurApi";
 import * as SecureStore from "expo-secure-store";
 
 

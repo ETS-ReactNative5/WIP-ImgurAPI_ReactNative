@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { View, Image, Text } from 'react-native';
 import ImageCircleView from "../views/ImageCircleView";
 import Styles from "../styles/Styles";

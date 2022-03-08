@@ -1,7 +1,5 @@
 import { API_URL, API_CLIENT_ID } from "@env";
 import * as SecureStore from "expo-secure-store";
-import React, { useState, useEffect } from 'react';
-
 const sortSubmissionsEnum = { new: "newest", old: "oldest", worst: "worst", best: "best" };
 
 export const getSubmissions = async (page = "0", sort = "newest") => {
