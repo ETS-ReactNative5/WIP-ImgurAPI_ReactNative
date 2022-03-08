@@ -8,7 +8,7 @@ First project in React-Native, it was realised within 48h hours and was tested o
 Some key points are: 
 - Use Class/Functionial programming
 - Use DeepLinking (imgur webauth)
-- Use ecure store
+- Use secure store
 - Use asynchronous functions
 - Multiplatform support
 
