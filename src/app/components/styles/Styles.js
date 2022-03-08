@@ -23,11 +23,17 @@ export default StyleSheet.create({
 		paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
 		justifyContent: 'center',
 	},
-	containerConnect: {
+	containerLogo: {
+		alignItems: "center",
+		width: "100%",
+		height: "50%",
+		paddingTop: 70,
+		backgroundColor: "seagreen",
+	},
+	containerButtonConnect: {
 		alignItems: "center",
 		width: "100%",
 		height: "100%",
-		paddingTop: 50,
 		backgroundColor: "seagreen",
 	},
 	tinyLogo: {
@@ -36,10 +42,12 @@ export default StyleSheet.create({
 		resizeMode: "stretch",
 	},
 	appButtonContainer: {
-		elevation: 8,
-		borderRadius: 10,
-		paddingVertical: 10,
-		paddingHorizontal: 12,
+		position: 'relative',
+		alignItems: 'center',
+		justifyContent: 'center',
+		paddingHorizontal: 32,
+		borderRadius: 9,
+		elevation: 3,
 	},
 	appButtonText: {
 		fontSize: 18,

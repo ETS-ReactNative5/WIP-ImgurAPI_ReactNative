@@ -27,7 +27,6 @@ export default class WebAuthScreen extends Component {
 		}
 		const { navigate } = this.props.navigation;
 		if (webViewState.url !== undefined) {
-			console.log(webViewState.url)
 			url = webViewState.url.replace("#", "&");
 			let params = {};
 			const regex = /([^&=]+)=([^&]*)/g;

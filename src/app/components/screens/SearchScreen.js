@@ -54,6 +54,7 @@ export default function SearchScreen() {
 				value={input}
 				onChangeText={(input) => setInput(input)}
 				onSubmitEditing={() => searchGallery(input)}
+				lightTheme
 				autoCorrect={false}
 			/>
 			<Text>{name}</Text>

@@ -16,11 +16,17 @@ export default class ConnectScreen extends Component {
 		const { navigate } = this.props.navigation;
 		return (
 			<SafeAreaView style={Styles.container}>
-				<View style={Styles.containerConnect}>
+				<View style={Styles.containerLogo}>
 					<Image
 						source={require("../../../../assets/imgur_logo_trans.png")}
-						style={Styles.tinyLogo} />
-					<Pressable onPress={() => this.onSubmitCredentials(navigate)}>
+						style={Styles.tinyLogo}
+					/>
+				</View>
+				<View style={Styles.containerButtonConnect}>
+					<Pressable
+						style={Styles.appButtonContainer}
+						onPress={() => this.onSubmitCredentials(navigate)}
+					>
 						<Text style={Styles.appButtonText}>Connect</Text>
 					</Pressable>
 				</View>
